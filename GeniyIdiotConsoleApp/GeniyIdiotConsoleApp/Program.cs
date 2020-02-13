@@ -45,7 +45,7 @@ namespace GeniyIdiotConsoleApp
                     countRightAnswer++;
                 }
             }
-
+            //test
             string[] diagnoses = new string[6];
             diagnoses[0] = "Идиот";
             diagnoses[1] = "Кретин";
