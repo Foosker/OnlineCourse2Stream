@@ -16,7 +16,8 @@ namespace GeniyIdiotConsoleApp
 
             return questions;
         }
-        static void Main(string[] args)
+        //Удалил неиспользуемые string [] args
+        static void Main()
         {
             int countQuestions = 5;
             string[] questions = GetQuestions(countQuestions);
