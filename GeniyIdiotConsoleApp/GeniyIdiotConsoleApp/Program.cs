@@ -16,17 +16,24 @@ namespace GeniyIdiotConsoleApp
 
             return questions;
         }
-        static void Main(string[] args)
-        {
-            int countQuestions = 5;
-            string[] questions = GetQuestions(countQuestions);
 
+        static int[] GetAnswers(int countQuestions)
+        {
             int[] answers = new int[countQuestions];
             answers[0] = 6;
             answers[1] = 9;
             answers[2] = 25;
             answers[3] = 60;
             answers[4] = 2;
+
+            return answers;
+        }
+        static void Main(string[] args)
+        {
+            int countQuestions = 5;
+            string[] questions = GetQuestions(countQuestions);
+
+            int[] answers = GetAnswers(countQuestions);
 
             int countRightAnswer = 0;
 
